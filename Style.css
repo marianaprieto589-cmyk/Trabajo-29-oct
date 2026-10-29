@@ -1,0 +1,182 @@
+
+/* ===== ESTILOS GENERALES ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fff8f3;
+    color: #49352d;
+    line-height: 1.7;
+}
+
+/* ===== ENCABEZADO ===== */
+
+header {
+    background-color: #a8435b;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #ffe8ec;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(120, 65, 65, 0.08);
+}
+
+section h2 {
+    color: #a8435b;
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #f3ccd4;
+    padding-bottom: 8px;
+}
+
+/* ===== IMÁGENES ===== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+}
+
+.imagen-principal {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+/* ===== INTRODUCCIÓN ===== */
+
+.introduccion {
+    text-align: center;
+}
+
+.introduccion p {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+/* ===== INGREDIENTES ===== */
+
+.ingredientes ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.ingredientes li {
+    background-color: #fff1f2;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border-left: 4px solid #d98298;
+}
+
+.ingredientes li::before {
+    content: "♡ ";
+    color: #a8435b;
+    font-weight: bold;
+}
+
+/* ===== PREPARACIÓN ===== */
+
+.preparacion ol {
+    padding-left: 25px;
+}
+
+.preparacion li {
+    padding: 10px 5px;
+    margin-bottom: 8px;
+}
+
+.preparacion li::marker {
+    color: #a8435b;
+    font-weight: bold;
+}
+
+/* ===== TARJETAS DE CONTENIDO ===== */
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.tarjeta {
+    background-color: #fff1f2;
+    padding: 20px;
+    border-radius: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(120, 65, 65, 0.12);
+}
+
+.tarjeta h3 {
+    color: #a8435b;
+    margin-bottom: 10px;
+}
+
+/* ===== BOTONES ===== */
+
+button,
+.boton {
+    background-color: #a8435b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+button:hover,
+.boton:hover {
+    background-color: #823247;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+
+footer {
+    background-color: #a8435b;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.95rem;
+}
